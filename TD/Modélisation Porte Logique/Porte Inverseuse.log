@@ -1,0 +1,22 @@
+Circuit: * C:\Users\utilisateur\Documents\TD\Modélisation Porte Logique\Porte Inverseuse.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Apr 27 16:00:29 2023
+Total elapsed time: 0.067 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3801
+traniter = 3789
+tranpoints = 1772
+accept = 1615
+rejected = 157
+matrix size = 13
+fillins = 1
+solver = Normal
+Avg thread counts: 1.2/1.4/1.4/1.2
+Matrix Compiler1: 746 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.1
+

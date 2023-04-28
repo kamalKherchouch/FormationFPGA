@@ -1,0 +1,26 @@
+Circuit: * C:\Users\utilisateur\Documents\TD\Modélisation Porte Logique\NOR.asc
+
+Direct Newton iteration for .op point succeeded.
+Changing Tseed to 9.76562e-10
+Changing Tseed to 9.76562e-12
+Changing Tseed to 9.76562e-09
+Changing Tseed to 9.76562e-13
+
+Date: Fri Apr 28 10:33:29 2023
+Total elapsed time: 0.079 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3968
+traniter = 3963
+tranpoints = 1732
+accept = 1583
+rejected = 145
+matrix size = 8
+fillins = 0
+solver = Normal
+Avg thread counts: 1.2/1.4/1.4/1.2
+Matrix Compiler1: 300 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 602 bytes object code size  0.1/0.1/[0.1]
+

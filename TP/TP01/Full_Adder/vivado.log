@@ -1,0 +1,129 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 27 10:54:44 2023
+# Process ID: 1836
+# Current directory: C:/Users/utilisateur/Documents/TP/TP01/Full_Adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6136 C:\Users\utilisateur\Documents\TP\TP01\Full_Adder\Full_Adder.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP01/Full_Adder/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP01/Full_Adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP01/Full_Adder/Full_Adder.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/TP01/Full_Adder/Full_Adder.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 1081.547 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+[Thu Apr 27 11:19:35 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP01/Full_Adder/Full_Adder.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1164.531 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP01/fichiers_a_fournir/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP01/fichiers_a_fournir/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1247.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 1380.328 ; gain = 298.781
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1853.523 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1876.988 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1876.988 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1876.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Thu Apr 27 11:24:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP01/Full_Adder/Full_Adder.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.938 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2421.938 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2421.938 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'A'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'Cin'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'Cout'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'S'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'A'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'Cin'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'Cout'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'S'; it is not accessible from the fabric routing.
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.938 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP01/fichiers_a_fournir/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP01/fichiers_a_fournir/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.938 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2421.938 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2421.938 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 12:05:03 2023...
