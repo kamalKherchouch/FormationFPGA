@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  9 09:37:35 2023
+# Process ID: 4128
+# Current directory: C:/Users/utilisateur/Documents/TP/TP02/Counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4300 C:\Users\utilisateur\Documents\TP\TP02\Counter\Counter.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP02/Counter/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP02/Counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.695 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 09:42:06 2023...

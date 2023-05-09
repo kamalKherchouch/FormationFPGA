@@ -1,0 +1,303 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  5 10:58:47 2023
+# Process ID: 3916
+# Current directory: C:/Users/utilisateur/Documents/TP/TP02/Counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2532 C:\Users\utilisateur\Documents\TP\TP02\Counter\Counter.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP02/Counter/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP02/Counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_counter.tcl
+relaunch_sim
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+restart
+run 4000ns
+restart
+run 10000ns
+restart
+run 16000ns
+restart
+relaunch_sim
+relaunch_sim
+restart
+run 16000ns
+relaunch_sim
+restart
+run 16000ns
+relaunch_sim
+restart
+run 16000ns
+relaunch_sim
+restart
+run 16000ns
+restart
+relaunch_sim
+run 16000ns
+relaunch_sim
+restart
+run 16000ns
+relaunch_sim
+relaunch_sim
+restart
+run 20000ns
+relaunch_sim
+restart
+run 10000ns
+relaunch_sim
+restart
+run 10000ns
+run 20000ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+run 20000ns
+relaunch_sim
+relaunch_sim
+restart
+run 20000ns
+relaunch_sim
+run 20000ns
+add_bp {C:/Users/utilisateur/Documents/TP/TP02/counter.vhd} 38
+relaunch_sim
+relaunch_sim
+run 20000ns
+remove_bps -all
+relaunch_sim
+run 20000ns
+relaunch_sim
+relaunch_sim
+run 20000ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 20000ns
+relaunch_sim
+relaunch_sim
+run 20000ns
+run 20000ns
+relaunch_sim
+relaunch_sim
+run 20000ns
+relaunch_sim
+relaunch_sim
+restart
+run 20000ns
+run 50000ns
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+run 20000ns
+run all
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+restart
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 20000ns
+relaunch_sim
+run 50000ns
+relaunch_sim
+run 50000ns
+relaunch_sim
+run 50000ns
+relaunch_sim
+run 50000ns
+restart
+run 50000ns
+relaunch_sim
+run 50000ns
+relaunch_sim
+run 50000ns
+restart
+run 50000ns
+relaunch_sim
+relaunch_sim
+run 50000ns
+relaunch_sim
+run 50000ns
+relaunch_sim
+run 50000ns
+run 50000ns
+relaunch_sim
+restart
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg
+set_property xsim.view C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+run 50000ns
+run 50000ns
+run 50000ns
+relaunch_sim
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg}
+relaunch_sim
+run 50000ns
+relaunch_sim
+run 50000ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg
+source tb_counter.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg
+source tb_counter.tcl
+run 50000ns
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg
+source tb_counter.tcl
+run 50000ns
+restart
+relaunch_sim
+run 50000ns
+relaunch_sim
+run 50000ns
+run 70000ns
+relaunch_sim
+run 50000ns
+run 100000ns
+relaunch_sim
+run 100000ns
+relaunch_sim
+run 50000ns
+run 100000ns
+relaunch_sim
+run 100000ns
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP02/Counter/tb_counter_behav.wcfg
+source tb_counter.tcl
+run 50000ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list clk_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list restart_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list LED_Output_OBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list End_Counter_OBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list resetn_IBUF ]]
+set_property target_constrs_file C:/Users/utilisateur/Documents/TP/TP02/Cora-Z7-10-Master.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_sim

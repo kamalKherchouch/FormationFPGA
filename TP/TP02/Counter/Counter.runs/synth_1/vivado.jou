@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  9 10:38:09 2023
+# Process ID: 7564
+# Current directory: C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.runs/synth_1
+# Command line: vivado.exe -log counter_unit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_unit.tcl
+# Log file: C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.runs/synth_1/counter_unit.vds
+# Journal file: C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source counter_unit.tcl -notrace
