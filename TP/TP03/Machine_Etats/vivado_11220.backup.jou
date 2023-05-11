@@ -1,0 +1,273 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 10 13:47:06 2023
+# Process ID: 11220
+# Current directory: C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5996 C:\Users\utilisateur\Documents\TP\TP03\Machine_Etats\Machine_Etats.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+source tb_tp_fsm.tcl
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+set_property xsim.view C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10s
+run 1000ns
+run 500n
+run 50n
+run 50ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 50ns
+run 5000ns
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+run 10000ns
+reset
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+run 10000ns
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 10000ns
+run 20000ns
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+run 20000ns
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 20000ns
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+run 50000ns

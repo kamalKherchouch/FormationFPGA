@@ -2,14 +2,13 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May  9 15:30:21 2023
-# Process ID: 6568
-# Current directory: C:/Users/utilisateur/Documents/TP/TP02/Counter
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6716 C:\Users\utilisateur\Documents\TP\TP02\Counter\Counter.xpr
-# Log file: C:/Users/utilisateur/Documents/TP/TP02/Counter/vivado.log
-# Journal file: C:/Users/utilisateur/Documents/TP/TP02/Counter\vivado.jou
+# Start of session at: Tue May  9 16:40:06 2023
+# Process ID: 5816
+# Current directory: C:/Users/utilisateur/Desktop/Formation_FPGA/FormationFPGA/TP/TP02/Counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4604 C:\Users\utilisateur\Desktop\Formation_FPGA\FormationFPGA\TP\TP02\Counter\Counter.xpr
+# Log file: C:/Users/utilisateur/Desktop/Formation_FPGA/FormationFPGA/TP/TP02/Counter/vivado.log
+# Journal file: C:/Users/utilisateur/Desktop/Formation_FPGA/FormationFPGA/TP/TP02/Counter\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.xpr
+open_project C:/Users/utilisateur/Desktop/Formation_FPGA/FormationFPGA/TP/TP02/Counter/Counter.xpr
 update_compile_order -fileset sources_1
-open_run synth_1 -name synth_1

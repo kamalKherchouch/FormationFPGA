@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  9 15:30:21 2023
+# Process ID: 6568
+# Current directory: C:/Users/utilisateur/Documents/TP/TP02/Counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6716 C:\Users\utilisateur\Documents\TP\TP02\Counter\Counter.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP02/Counter/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP02/Counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/TP02/Counter/Counter.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:19 . Memory (MB): peak = 1100.238 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1196.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP02/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP02/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1302.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 1429.586 ; gain = 329.348
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 16:20:57 2023...

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_tp_fsm_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_tp_fsm" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="991117fs"></ZoomStartTime>
+      <ZoomEndTime time="1077537fs"></ZoomEndTime>
+      <Cursor1Time time="11979fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="140"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_tp_fsm/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/Restart" type="logic">
+      <obj_property name="ElementShortName">Restart</obj_property>
+      <obj_property name="ObjectShortName">Restart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/dut/End_Counter" type="logic">
+      <obj_property name="ElementShortName">End_Counter</obj_property>
+      <obj_property name="ObjectShortName">End_Counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/dut/Compteur/D_out" type="other">
+      <obj_property name="ElementShortName">D_out</obj_property>
+      <obj_property name="ObjectShortName">D_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/dut/D_out_1" type="other">
+      <obj_property name="ElementShortName">D_out_1</obj_property>
+      <obj_property name="ObjectShortName">D_out_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/Output_On_Off" type="logic">
+      <obj_property name="ElementShortName">Output_On_Off</obj_property>
+      <obj_property name="ObjectShortName">Output_On_Off</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/dut/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/dut/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/LED_OUT" type="array">
+      <obj_property name="ElementShortName">LED_OUT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_OUT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tp_fsm/dut/Validation_Clignotement" type="other">
+      <obj_property name="ElementShortName">Validation_Clignotement</obj_property>
+      <obj_property name="ObjectShortName">Validation_Clignotement</obj_property>
+   </wvobject>
+</wave_config>
