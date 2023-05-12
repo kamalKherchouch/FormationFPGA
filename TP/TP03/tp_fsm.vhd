@@ -36,6 +36,7 @@ architecture behavioral of tp_fsm is
     -- signal Compteur_CLignotement : positive := 0; -- Pour la simulation
     signal Compteur_CLignotement : positive range 0 to Nb_Cycle*2 ;  -- Pour la synthèse
      
+	 -- Composant Counter_Unit
     component Counter_unit 
 		port ( 
 			clk         : in std_logic; 
@@ -55,8 +56,8 @@ architecture behavioral of tp_fsm is
             End_Counter => End_Counter
         );
 		
-	
-		process(clk,resetn,Restart)
+		-- processe pour le comptage
+		process(clk,resetn,Restart) -- Liste des signaux de sensibilité du processe
 		begin
             if(resetn = '1' or Restart = '1') then
                 D_out_1 <= 0;
@@ -65,7 +66,7 @@ architecture behavioral of tp_fsm is
 			elsif(rising_edge(clk)) then
 			    current_state <= next_state;
 				
-				--a completer avec votre compteur de cycles
+				-- Comptage pour D_out_1
 				if(RAZ = '0') then 
 				    if(End_counter = '1') then 
 				        D_out_1 <= D_out_1 + 1;
@@ -75,50 +76,51 @@ architecture behavioral of tp_fsm is
                  else 
                     D_out_1 <= 0;
                  end if;
+				 
+				 -- Comptage du compteur de clignotement
                  if(D_out_1 = Nb_Cycle-1 and End_Counter = '1') then
                     Compteur_CLignotement <= Compteur_CLignotement+1; 
                     else if (Validation_Clignotement ='1') then
-                        Compteur_CLignotement <= 0;     
-                      --  Validation_Clignotement <= '1';                  
+                        Compteur_CLignotement <= 0;                 
                     else
                         Compteur_CLignotement <= Compteur_CLignotement;
-                       -- Validation_Clignotement <= '0'; 
                     end if;
                  end if;
             end if;       
 		end process;
 		
 		--Partie combinatoire
-        RAZ <= '1' when (D_out_1 = Nb_Cycle-1 and End_Counter = '1')
+        RAZ <= '1' when (D_out_1 = Nb_Cycle-1 and End_Counter = '1') -- Fin de comptage pour D_out_1
                 else '0';
-        Output_On_Off <= RAZ; 
-        LED_OUT <= S_LED_OUT;
+        Output_On_Off <= RAZ; -- on affecte RAZ à Output_On_Off
+        LED_OUT <= S_LED_OUT; -- on affecte S_LED_OUT à LED_OUT
         
-        Validation_Clignotement <= '1' when (Compteur_CLignotement = (Nb_Cycle*2) and End_Counter = '1')
+        Validation_Clignotement <= '1' when (Compteur_CLignotement = (Nb_Cycle*2) and End_Counter = '1') -- on passe Validation_Clignotement à 1 pour indiquer le changement d'état de notre machine
                 else '0';
 
 
-        -- FSM
-		process(current_state,Restart,Validation_Clignotement,Compteur_CLignotement,RAZ ) --a completer avec vos signaux
+        -- processe de la machine d'états
+		process(current_state,Restart,Validation_Clignotement,Compteur_CLignotement,RAZ ) -- Liste des signaux de sensibilité du processe
 		begin 	
            case current_state is
               when Etat_Init =>
-                if(Restart = '0') then 
-                       if (Validation_Clignotement = '0') then
-                            if(Compteur_CLignotement mod 2 = 0 ) then 
-                                S_LED_OUT <= "000";
+                if(Restart = '0') then -- Restart non activé
+                       if (Validation_Clignotement = '0') then -- Validation_clignotement permet de connaitre le nombre de clignotement par état
+                            if(Compteur_CLignotement mod 2 = 0 ) then -- si Compteur_CLignotement est impaire on éteint les leds sinon on les actives
+                                S_LED_OUT <= "000"; -- On éteint les LEDS
                             else
-                                S_LED_OUT <= "111";
-                            end if;
+                                S_LED_OUT <= "111"; -- on active la couleur blanche
+                            end if; -- on passe à l'état initialisation
                             next_state <= Etat_Init; 
-                        else                  
+                        else       -- On passe à l'état suivant         
                             next_state <= Etat_Rouge; 
                         end if;    
-                else 
+                else -- Restart activé
                     next_state <= Etat_Init; 
                     S_LED_OUT <= "000";   
                 end if;
                 
+				-- Même logique de commantaire pour les autres états...
                 when Etat_Rouge =>
                   if(Restart = '0') then 
                        if (Validation_Clignotement = '0') then
