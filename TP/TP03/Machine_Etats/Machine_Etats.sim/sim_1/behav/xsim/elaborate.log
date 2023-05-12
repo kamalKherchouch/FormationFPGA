@@ -5,13 +5,14 @@ Using 2 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
 WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
-WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:32]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
 WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
 WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
 WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
-WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:57]
-WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:71]
-WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:76]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:62]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:79]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

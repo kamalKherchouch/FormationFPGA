@@ -1,0 +1,75 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri May 12 15:51:07 2023
+| Host         : DESKTOP-AD02GFS running 64-bit major release  (build 9200)
+| Command      : report_methodology -file tp_fsm_methodology_drc_routed.rpt -pb tp_fsm_methodology_drc_routed.pb -rpx tp_fsm_methodology_drc_routed.rpx
+| Design       : tp_fsm
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 7
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 3          |
+| TIMING-20 | Warning  | Non-clocked latch             | 3          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell FSM_sequential_current_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Compteur_CLignotement_reg[0]/CLR, Compteur_CLignotement_reg[1]/CLR,
+Compteur_CLignotement_reg[2]/CLR, D_out_1_reg[0]/CLR, D_out_1_reg[1]/CLR,
+FSM_sequential_current_state_reg[0]/CLR
+FSM_sequential_current_state_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on Restart relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on resetn relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on Output_On_Off relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch S_LED_OUT_reg[0] cannot be properly analyzed as its control pin S_LED_OUT_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch S_LED_OUT_reg[1] cannot be properly analyzed as its control pin S_LED_OUT_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch S_LED_OUT_reg[2] cannot be properly analyzed as its control pin S_LED_OUT_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+

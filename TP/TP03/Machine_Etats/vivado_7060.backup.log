@@ -1,0 +1,2610 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 12 10:44:47 2023
+# Process ID: 7060
+# Current directory: C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4272 C:\Users\utilisateur\Documents\TP\TP03\Machine_Etats\Machine_Etats.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 1099.117 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1099.117 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1099.117 ; gain = 0.000
+run 50000ns
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1099.117 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1099.117 ; gain = 0.000
+run 50000ns
+run 500000ns
+run 5000000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1099.117 ; gain = 0.000
+run 50000ns
+run 500000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1099.117 ; gain = 0.000
+run 500000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 500000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 20000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+ERROR: [XSIM 43-3249] File C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd, line 35. Unresolved signal "compteur_clignotement" is multiply driven.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+ERROR: [XSIM 43-3249] File C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd, line 35. Unresolved signal "compteur_clignotement" is multiply driven.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:99]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 5980 ns  Iteration: 10000
+run 500000ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 50000ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:99]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 500000ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 5980 ns  Iteration: 10000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 20000ns
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+ERROR: [VRFC 10-4982] syntax error near 'else' [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:110]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:21]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd' ignored due to errors
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:62]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+ERROR: [XSIM 43-3249] File C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd, line 25. Unresolved signal "current_state" is multiply driven.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:62]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+ERROR: [XSIM 43-3249] File C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd, line 25. Unresolved signal "current_state" is multiply driven.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:62]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 50000ns
+run 100000ns
+run 70000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:62]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:79]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 70000ns
+run 80000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:62]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:79]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 80000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tp_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_tp_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+"xelab -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 151500716dce4d9b990d434b30ab874a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_tp_fsm_behav xil_defaultlib.tb_tp_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tb_tp_fsm.vhd:17]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:29]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:35]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:60]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:62]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:74]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP03/tp_fsm.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tp_fsm [tp_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tp_fsm
+Built simulation snapshot tb_tp_fsm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/Machine_Etats.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tp_fsm_behav -key {Behavioral:sim_1:Functional:tb_tp_fsm} -tclbatch {tb_tp_fsm.tcl} -view {C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP03/Machine_Etats/tb_tp_fsm_behav.wcfg
+source tb_tp_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tp_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.332 ; gain = 0.000
+run 80000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 12 12:43:09 2023...

@@ -22,6 +22,7 @@ architecture behavioral of tb_tp_fsm is
 	constant period : time := 2*hp;  --periode de 10ns, soit une frequence de 100Hz
 	constant Nb_Cycle : positive := 3; 
 	constant Nb_loop : positive := 250;
+	signal Indice : std_logic := '0';
 	
 	component tp_fsm
 		port ( 
@@ -82,54 +83,28 @@ architecture behavioral of tb_tp_fsm is
 	process	
 	begin 
 	    
-	  -- Test avec Reset non active    
-	  resetn <= '1';
-	  restart <= '1';
-	  wait for 1000ns;
-	  resetn <= '0';
-	  restart <= '1';
-	  wait for 1000ns;
-	  resetn <= '1';
-	  restart <= '0';
-	  wait for 1000ns;
-	  
-	  resetn <= '0';
-	  restart <= '0';
-	  for i in 1 to 100000 loop
-	      clk <= not clk;
-		  wait for hp;
-	   end loop; 
-	  
---	   for i in 1 to 3 loop
---	       for i in 1 to nb_loop loop
---			 clk <= not clk;
---			 wait for hp;
---			 if (D_out_1 = Nb_Cycle-1) then
---			   --  assert Output_On_Off = '0'
---		       --  report "Output_On_Off : test failed, il devrait etre a  0" severity failure;
---		      end if;
---		   end loop;
---		end loop; 
---	   -- Test avec Reset active
---	   resetn <= '0';
---	   restart <= '1';
---	   for i in 1 to 3 loop
---	       if (i > 5 and i < 8) then 
---	           resetn <= '1';
---	       else 
---	           resetn <= '0';
---	       end if;
---	       for i in 1 to nb_loop loop
---		      clk <= not clk;
---			  wait for hp;
---			  if (D_out_1 = Nb_Cycle-1) then
---			    -- assert Output_On_Off = '1'
---		        -- report "Output_On_Off : test failed, il devrait etre a  1" severity failure;
---		      end if;
---		    end loop;
---		end loop;
-	   
-	   
-	 end process;
+	     
+	for i in 1 to 200000 loop
+	   clk <= not clk;
+	   wait for hp;
+	   if(i>0 and i<1000) then
+	       resetn <= '1';
+	       restart <= '1';
+	   elsif (i>=90000 and i<100000) then
+	       resetn <= '1';
+	       restart <= '0';
+	   elsif (i>=100000 and i<160000) then
+	       resetn <= '0';
+	       restart <= '0';
+	   elsif (i>=160000 and i<170000) then
+	       resetn <= '0';
+	       restart <= '1';
+	   else
+	       resetn <= '0';
+	       restart <= '0';
+	   end if;	       
+	end loop; 
+  
+    end process;
 	
 end behavioral;
