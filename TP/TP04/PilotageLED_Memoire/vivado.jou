@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 15 15:10:36 2023
+# Process ID: 10216
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10336 C:\Users\utilisateur\Documents\TP\TP04\PilotageLED_Memoire\PilotageLED_Memoire.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire\vivado.jou
+#----------------------------------------------------------ststart_guopopen_project C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire/PilotageLED_Memoire.xpupdate_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire/tb_PilotageLED_Memoire_behav.wcfg
+source tb_PilotageLED_Memoire.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire/tb_PilotageLED_Memoire_behav.wcfg
+source tb_PilotageLED_Memoire.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire/tb_PilotageLED_Memoire_behav.wcfg
+source tb_PilotageLED_Memoire.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire/tb_PilotageLED_Memoire_behav.wcfg
+source tb_PilotageLED_Memoire.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire/tb_PilotageLED_Memoire_behav.wcfg
+source tb_PilotageLED_Memoire.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Memoire/tb_PilotageLED_Memoire_behav.wcfg
+source tb_PilotageLED_Memoire.tcl
+run 20000ns
+close_sim

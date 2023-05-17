@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 17 15:45:33 2023
+# Process ID: 6056
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6684 C:\Users\utilisateur\Documents\TP\TP04 - PilotageLED_Avec_Module_LedDriver\PilotageLED_Avec_Module_LedDriver\PilotageLED_Avec_Module_LedDriver.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
