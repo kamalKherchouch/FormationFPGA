@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 22 15:06:14 2023
+# Process ID: 1536
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.runs/FIFO_Code_Couleur_synth_1
+# Command line: vivado.exe -log FIFO_Code_Couleur.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIFO_Code_Couleur.tcl
+# Log file: C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.runs/FIFO_Code_Couleur_synth_1/FIFO_Code_Couleur.vds
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.runs/FIFO_Code_Couleur_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIFO_Code_Couleur.tcl -notrace

@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 17 15:45:33 2023
+# Process ID: 6056
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6684 C:\Users\utilisateur\Documents\TP\TP04 - PilotageLED_Avec_Module_LedDriver\PilotageLED_Avec_Module_LedDriver\PilotageLED_Avec_Module_LedDriver.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver'
+INFO: [Project 1-313] Project file moved from 'C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver.gen/sources_1', nor could it be found using path 'C:/Users/utilisateur/Documents/TP/TP04/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:01:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1101.086 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Couldn't access process for termination
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 17 15:47:15 2023...
+Module_LedDriver/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1178.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1293.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:42 ; elapsed = 00:00:21 . Memory (MB): peak = 1417.406 ; gain = 314.934
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1422.641 ; gain = 0.000
+[Wed May 17 15:47:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 17 15:49:12 2023...

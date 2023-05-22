@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 19 10:58:51 2023
+# Process ID: 1872
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3260 C:\Users\utilisateur\Documents\TP\TP04 - Part2\TP04 - Pilotage\PilotageLED\PilotageLED.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.xpr}
+update_compile_order -fileset sources_1

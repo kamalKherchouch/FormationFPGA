@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_PilotageLED_Avec_Module_LedDriver_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_PilotageLED_Avec_Module_LedDriver" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="50000001fs"></ZoomEndTime>
+      <Cursor1Time time="50000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/Compteur/End_Counter" type="logic">
+      <obj_property name="ElementShortName">End_Counter</obj_property>
+      <obj_property name="ObjectShortName">End_Counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/Compteur/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/Compteur/Fifo/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/Compteur/Fifo/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/Compteur/Fifo/din" type="array">
+      <obj_property name="ElementShortName">din[1:0]</obj_property>
+      <obj_property name="ObjectShortName">din[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/Compteur/Fifo/dout" type="array">
+      <obj_property name="ElementShortName">dout[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/Compteur/Code_Couleur" type="array">
+      <obj_property name="ElementShortName">Code_Couleur[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Code_Couleur[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/Compteur/Data_Code_Couleur" type="array">
+      <obj_property name="ElementShortName">Data_Code_Couleur[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_Code_Couleur[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PilotageLED_Avec_Module_LedDriver/dut/LED_Output" type="array">
+      <obj_property name="ElementShortName">LED_Output[2:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_Output[2:0]</obj_property>
+   </wvobject>
+</wave_config>

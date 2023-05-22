@@ -1,0 +1,662 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 17 15:50:31 2023
+# Process ID: 8316
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9512 C:\Users\utilisateur\Documents\TP\TP04 - Pilotage\PilotageLED\PilotageLED.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.gen/sources_1', nor could it be found using path 'C:/Users/utilisateur/Documents/TP/TP04 - PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver/PilotageLED_Avec_Module_LedDriver.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:10 . Memory (MB): peak = 1101.949 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 17 15:51:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2477.992 ; gain = 1376.043
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 2526.047 ; gain = 9.863
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-17 16:00:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-17 16:00:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes Compteur/current_state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-17 16:01:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-17 16:01:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-17 16:01:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-17 16:01:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PilotageLED_Avec_Module_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_PilotageLED_Avec_Module_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED_Avec_Module_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PilotageLED_Avec_Module_LedDriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/tb_PilotageLED_Avec_Module_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_PilotageLED_Avec_Module_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xelab -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.PilotageLED_Avec_Module_LedDriver [pilotageled_avec_module_leddrive...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_pilotageled_avec_module_leddr...
+Built simulation snapshot tb_PilotageLED_Avec_Module_LedDriver_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PilotageLED_Avec_Module_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_PilotageLED_Avec_Module_LedDriver} -tclbatch {tb_PilotageLED_Avec_Module_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2572.301 ; gain = 11.328
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PilotageLED_Avec_Module_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2572.301 ; gain = 11.980
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PilotageLED_Avec_Module_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_PilotageLED_Avec_Module_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xelab -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3667] range extends beyond constraint of type 'positive' [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:18]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_pilotageled_avec_module_leddriver in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2572.301 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PilotageLED_Avec_Module_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_PilotageLED_Avec_Module_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xelab -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.PilotageLED_Avec_Module_LedDriver [pilotageled_avec_module_leddrive...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_pilotageled_avec_module_leddr...
+Built simulation snapshot tb_PilotageLED_Avec_Module_LedDriver_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PilotageLED_Avec_Module_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_PilotageLED_Avec_Module_LedDriver} -tclbatch {tb_PilotageLED_Avec_Module_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PilotageLED_Avec_Module_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2576.781 ; gain = 4.480
+run 50000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PilotageLED_Avec_Module_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_PilotageLED_Avec_Module_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xelab -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.PilotageLED_Avec_Module_LedDriver [pilotageled_avec_module_leddrive...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_pilotageled_avec_module_leddr...
+Built simulation snapshot tb_PilotageLED_Avec_Module_LedDriver_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PilotageLED_Avec_Module_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_PilotageLED_Avec_Module_LedDriver} -tclbatch {tb_PilotageLED_Avec_Module_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PilotageLED_Avec_Module_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2588.309 ; gain = 5.340
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PilotageLED_Avec_Module_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_PilotageLED_Avec_Module_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xelab -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [\counter_unit(cst=50)\]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.PilotageLED_Avec_Module_LedDriver [pilotageled_avec_module_leddrive...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_pilotageled_avec_module_leddr...
+Built simulation snapshot tb_PilotageLED_Avec_Module_LedDriver_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PilotageLED_Avec_Module_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_PilotageLED_Avec_Module_LedDriver} -tclbatch {tb_PilotageLED_Avec_Module_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PilotageLED_Avec_Module_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2602.262 ; gain = 13.953
+run 50000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 17 16:16:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1/runme.log
+[Wed May 17 16:16:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 17 16:19:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2905.781 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[6]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[7]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[8]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[9]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[10]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[11]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[12]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[13]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[14]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[15]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[16]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[17]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[18]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[19]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[20]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[21]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[22]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[23]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[24]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[25]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'Compteur/Compteur/D_out_reg[26]'. [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc:163]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3007.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 3120.828 ; gain = 515.816
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 6 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Compteur/Compteur/D_out_reg[0]} {Compteur/Compteur/D_out_reg[1]} {Compteur/Compteur/D_out_reg[2]} {Compteur/Compteur/D_out_reg[3]} {Compteur/Compteur/D_out_reg[4]} {Compteur/Compteur/D_out_reg[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {LED_Output_OBUF[0]} {LED_Output_OBUF[1]} {LED_Output_OBUF[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list Compteur/current_state ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3167.734 ; gain = 1.371
+[Wed May 17 16:21:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3167.734 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-17 16:28:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-17 16:28:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-17 16:28:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-17 16:28:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-17 16:28:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-17 16:28:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-17 16:28:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-17 16:28:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PilotageLED_Avec_Module_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_PilotageLED_Avec_Module_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+"xelab -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ad3fa1b30fbd4d069d7c2a0e0e1edd4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_PilotageLED_Avec_Module_LedDriver_behav xil_defaultlib.tb_PilotageLED_Avec_Module_LedDriver -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [\counter_unit(cst=50)\]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.PilotageLED_Avec_Module_LedDriver [pilotageled_avec_module_leddrive...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_pilotageled_avec_module_leddr...
+Built simulation snapshot tb_PilotageLED_Avec_Module_LedDriver_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PilotageLED_Avec_Module_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_PilotageLED_Avec_Module_LedDriver} -tclbatch {tb_PilotageLED_Avec_Module_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PilotageLED_Avec_Module_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 3191.758 ; gain = 0.000
+run 50000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed May 17 16:35:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed May 17 16:36:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed May 17 16:37:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1/runme.log
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed May 17 16:38:56 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed May 17 16:41:27 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed May 17 16:42:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3211.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 3211.297 ; gain = 12.855
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 17 16:50:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices -disable_eos_check [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z010_1 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+refresh_hw_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3216.113 ; gain = 0.000
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 17 16:55:22 2023...

@@ -1,0 +1,1908 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 19 13:45:50 2023
+# Process ID: 10136
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3020 C:\Users\utilisateur\Documents\TP\TP04 - Part2\LedDriver_Fifo\LedDriver\LedDriver.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.gen/sources_1', nor could it be found using path 'C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/LedDriver.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:13 . Memory (MB): peak = 1095.590 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property is not allowed in procedure init_gui
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting value property is not allowed in procedure init_gui
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting enabled property is not allowed in procedure init_gui
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_generator_0
+set_property -dict [list CONFIG.Fifo_Implementation {Common_Clock_Block_RAM} CONFIG.INTERFACE_TYPE {Native} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {2} CONFIG.Output_Data_Width {2} CONFIG.Reset_Type {Synchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Valid_Flag {true} CONFIG.Write_Acknowledge_Flag {true} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count_Width {11} CONFIG.Write_Data_Count_Width {11} CONFIG.Read_Data_Count_Width {11} CONFIG.Full_Threshold_Assert_Value {1023} CONFIG.Full_Threshold_Negate_Value {1022} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_wach {15} CONFIG.Empty_Threshold_Assert_Value_wach {14} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_wrch {15} CONFIG.Empty_Threshold_Assert_Value_wrch {14} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_rach {15} CONFIG.Empty_Threshold_Assert_Value_rach {14} CONFIG.Enable_Safety_Circuit {false}] [get_ips fifo_generator_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Empty_Threshold_Assert_Value_wrch' from '1022' to '14' has been ignored for IP 'fifo_generator_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Empty_Threshold_Assert_Value_wach' from '1022' to '14' has been ignored for IP 'fifo_generator_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Empty_Threshold_Assert_Value_rach' from '1022' to '14' has been ignored for IP 'fifo_generator_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Full_Threshold_Assert_Value_wrch' from '1023' to '15' has been ignored for IP 'fifo_generator_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Full_Threshold_Assert_Value_wach' from '1023' to '15' has been ignored for IP 'fifo_generator_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Full_Threshold_Assert_Value_rach' from '1023' to '15' has been ignored for IP 'fifo_generator_0'
+generate_target {instantiation_template} [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_generator_0'...
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci}}
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_generator_0
+set_property -dict [list CONFIG.Input_Data_Width {2} CONFIG.Output_Data_Width {2} CONFIG.Write_Acknowledge_Flag {false}] [get_ips fifo_generator_0]
+generate_target {instantiation_template} [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/fifo_generator_0_1/fifo_generator_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_generator_0'...
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/fifo_generator_0_1/fifo_generator_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/fifo_generator_0_1/fifo_generator_0.xci}}
+file delete -force {c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/fifo_generator_0_1}
+file delete -force {c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.gen/sources_1/ip/fifo_generator_0_1}
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name FIFO_Code_Couleur
+set_property -dict [list CONFIG.Component_Name {FIFO_Code_Couleur} CONFIG.Input_Data_Width {2} CONFIG.Output_Data_Width {2} CONFIG.Enable_ECC {false} CONFIG.Reset_Pin {true} CONFIG.Reset_Type {Synchronous_Reset} CONFIG.Use_Dout_Reset {true} CONFIG.Valid_Flag {false} CONFIG.Write_Acknowledge_Flag {false} CONFIG.Overflow_Flag {false}] [get_ips FIFO_Code_Couleur]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'FIFO_Code_Couleur' to 'FIFO_Code_Couleur' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'FIFO_Code_Couleur'...
+generate_target all [get_files  {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'FIFO_Code_Couleur'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'FIFO_Code_Couleur'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'FIFO_Code_Couleur'...
+catch { config_ip_cache -export [get_ips -all FIFO_Code_Couleur] }
+export_ip_user_files -of_objects [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}]
+launch_runs FIFO_Code_Couleur_synth_1 -jobs 4
+[Fri May 19 15:21:59 2023] Launched FIFO_Code_Couleur_synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.runs/FIFO_Code_Couleur_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -directory {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.ip_user_files} -ipstatic_source_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.gen/sources_1/ip/FIFO_Code_Couleur/sim/FIFO_Code_Couleur.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Code_Couleur
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1182.605 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1182.605 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1191.758 ; gain = 9.152
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1191.758 ; gain = 9.152
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1193.809 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1193.809 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1193.809 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:36 . Memory (MB): peak = 1197.430 ; gain = 3.621
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1197.430 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1197.430 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1205.957 ; gain = 8.527
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 1205.957 ; gain = 8.527
+run 50000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1211.750 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1211.750 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1213.059 ; gain = 1.309
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1213.059 ; gain = 1.309
+run 50000ns
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1219.836 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1219.836 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1220.898 ; gain = 1.063
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1220.898 ; gain = 1.063
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-8350] formal port 'data_end_cycle' of mode 'out' cannot be associated with actual port 'data_end_cycle' of mode 'in' [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd:28]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1231.570 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1231.570 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1231.570 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 1231.570 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1231.570 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1238.348 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1238.348 ; gain = 0.000
+run 50000ns
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1243.582 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.758 ; gain = 3.176
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1246.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1247.965 ; gain = 1.207
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1247.965 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.965 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1252.602 ; gain = 4.637
+run 100000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+50000ns
+[50000ns]
+run 50000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1258.508 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1260.707 ; gain = 2.199
+run 50000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+ERROR: [VRFC 10-2989] 'led_commande_fsm_d1' is not declared [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd:149]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd:17]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd' ignored due to errors
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1268.512 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1268.512 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+ERROR: [VRFC 10-2989] 'led_commande_fsm_d1' is not declared [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd:149]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd:17]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1268.512 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1268.512 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+WARNING: Simulation object /tb_LedDriver/dut/LED_Commande_Fsm_D1 was not found in the design.
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 1270.480 ; gain = 1.969
+run 50000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.574 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1276.574 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1281.488 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1281.488 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1281.848 ; gain = 0.359
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1281.848 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1281.848 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1284.898 ; gain = 3.051
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1284.898 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1292.320 ; gain = 7.422
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1294.754 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1297.988 ; gain = 3.234
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1301.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1301.238 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.520 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1302.520 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1307.906 ; gain = 5.387
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1307.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1307.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1308.145 ; gain = 0.238
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1313.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1315.445 ; gain = 2.109
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LedDriver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LedDriver_vlog.prj"
+"xvhdl --incr --relax -prj tb_LedDriver_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+"xelab -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7083bcd007d4421da8257a1cc1fee3c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LedDriver_behav xil_defaultlib.tb_LedDriver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/Counter_unit.vhd:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.FIFO_Code_Couleur
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_leddriver
+Built simulation snapshot tb_LedDriver_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1317.477 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/LedDriver.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LedDriver_behav -key {Behavioral:sim_1:Functional:tb_LedDriver} -tclbatch {tb_LedDriver.tcl} -view {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/LedDriver_Fifo/LedDriver/tb_LedDriver_behav.wcfg}
+source tb_LedDriver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LedDriver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1320.738 ; gain = 3.262
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 19 17:14:56 2023...

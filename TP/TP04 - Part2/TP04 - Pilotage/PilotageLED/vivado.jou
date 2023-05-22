@@ -1,0 +1,273 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 22 10:56:16 2023
+# Process ID: 8096
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11336 C:\Users\utilisateur\Documents\TP\TP04 - Part2\TP04 - Pilotage\PilotageLED\PilotageLED.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 100000ns
+restart
+run 50000ns
+restart
+run 50000ns
+restart
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_generator_0
+set_property -dict [list CONFIG.Input_Data_Width {2} CONFIG.Output_Data_Width {2}] [get_ips fifo_generator_0]
+generate_target {instantiation_template} [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci}}]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci}}
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name Fifo
+set_property -dict [list CONFIG.Component_Name {Fifo} CONFIG.Input_Data_Width {2} CONFIG.Output_Data_Width {2}] [get_ips Fifo]
+generate_target {instantiation_template} [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/Fifo/Fifo.xci}}]
+generate_target all [get_files  {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/Fifo/Fifo.xci}}]
+catch { config_ip_cache -export [get_ips -all Fifo] }
+export_ip_user_files -of_objects [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/Fifo/Fifo.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/Fifo/Fifo.xci}}]
+launch_runs Fifo_synth_1 -jobs 4
+wait_on_run Fifo_synth_1
+export_simulation -of_objects [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/Fifo/Fifo.xci}}] -directory {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files} -ipstatic_source_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+export_ip_user_files -of_objects  [get_files {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/Fifo/Fifo.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset Fifo {{c:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/Fifo/Fifo.xci}}
+add_files -norecurse {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}
+export_ip_user_files -of_objects  [get_files  {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+generate_target all [get_files {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}]
+export_ip_user_files -of_objects [get_files {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -directory {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files} -ipstatic_source_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset FIFO_Code_Couleur
+set_property top FIFO_Code_Couleur [get_fileset FIFO_Code_Couleur]
+move_files -fileset [get_fileset FIFO_Code_Couleur] [get_files -of_objects [get_fileset sources_1] {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}]
+launch_run FIFO_Code_Couleur_synth_1
+wait_on_run FIFO_Code_Couleur_synth_1
+
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+restart
+run 50000ns
+restart
+run 50000ns
+restart
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+set_property -dict [list CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {1} CONFIG.Enable_Safety_Circuit {true}] [get_ips FIFO_Code_Couleur]
+generate_target all [get_files  {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}]
+catch { config_ip_cache -export [get_ips -all FIFO_Code_Couleur] }
+export_ip_user_files -of_objects [get_files {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -no_script -sync -force -quiet
+reset_run FIFO_Code_Couleur_synth_1
+launch_runs FIFO_Code_Couleur_synth_1 -jobs 4
+wait_on_run FIFO_Code_Couleur_synth_1
+export_simulation -of_objects [get_files {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -directory {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files} -ipstatic_source_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+launch_simulation
+reset_run FIFO_Code_Couleur_synth_1
+launch_simulation
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs FIFO_Code_Couleur_synth_1]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs FIFO_Code_Couleur_synth_1]
+launch_simulation
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+restart
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+set_property -dict [list CONFIG.Full_Flags_Reset_Value {0}] [get_ips FIFO_Code_Couleur]
+generate_target all [get_files  {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}]
+catch { config_ip_cache -export [get_ips -all FIFO_Code_Couleur] }
+export_ip_user_files -of_objects [get_files {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -no_script -sync -force -quiet
+launch_runs FIFO_Code_Couleur_synth_1 -jobs 4
+wait_on_run FIFO_Code_Couleur_synth_1
+export_simulation -of_objects [get_files {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -directory {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files} -ipstatic_source_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+set_property -dict [list CONFIG.Reset_Type {Synchronous_Reset} CONFIG.Use_Dout_Reset {true} CONFIG.Enable_Safety_Circuit {false}] [get_ips FIFO_Code_Couleur]
+generate_target all [get_files  {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}]
+catch { config_ip_cache -export [get_ips -all FIFO_Code_Couleur] }
+catch { [ delete_ip_run [get_ips -all FIFO_Code_Couleur] ] }
+export_ip_user_files -of_objects [get_files {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}]
+export_simulation -of_objects [get_files {{C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.srcs/sources_1/ip/FIFO_Code_Couleur/FIFO_Code_Couleur.xci}}] -directory {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files} -ipstatic_source_dir {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+restart
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+refresh_design
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~""}]]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_sim

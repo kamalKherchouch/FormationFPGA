@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_PilotageLED_Avec_Module_LedDriver_behav/xsimk.exe -simmode gui -wdb tb_PilotageLED_Avec_Module_LedDriver_behav.wdb -simrunnum 0 -socket 52914
+Design successfully loaded
+Design Loading Memory Usage: 5480 KB (Peak: 5480 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 6764 KB (Peak: 6764 KB)
+Simulation CPU Usage: 124 ms

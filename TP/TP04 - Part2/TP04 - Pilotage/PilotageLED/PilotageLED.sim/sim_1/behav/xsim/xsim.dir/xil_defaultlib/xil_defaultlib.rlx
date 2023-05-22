@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/Counter_unit.vhd,1684764576,vhdl,,,,counter_unit,,,,,,,,
+C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/LedDriver.vhd,1684763829,vhdl,,,,leddriver,,,,,,,,
+C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/LedDriver.gen/sources_1/ip/FIFO_Code_Couleur/sim/FIFO_Code_Couleur.v,1684758772,verilog,,,,FIFO_Code_Couleur,,,,,,,,
+C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED/PilotageLED.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/PilotageLED_Avec_Module_LedDriver.vhd,1684763829,vhdl,,,,pilotageled_avec_module_leddriver,,,,,,,,
+C:/Users/utilisateur/Documents/TP/TP04 - Part2/TP04 - Pilotage/tb_PilotageLED_Avec_Module_LedDriver.vhd,1684764521,vhdl,,,,tb_pilotageled_avec_module_leddriver,,,,,,,,

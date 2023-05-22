@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 17 15:50:31 2023
+# Process ID: 8316
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9512 C:\Users\utilisateur\Documents\TP\TP04 - Pilotage\PilotageLED\PilotageLED.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes Compteur/current_state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+restart
+run 50000ns
+restart
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 6 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Compteur/Compteur/D_out_reg[0]} {Compteur/Compteur/D_out_reg[1]} {Compteur/Compteur/D_out_reg[2]} {Compteur/Compteur/D_out_reg[3]} {Compteur/Compteur/D_out_reg[4]} {Compteur/Compteur/D_out_reg[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {LED_Output_OBUF[0]} {LED_Output_OBUF[1]} {LED_Output_OBUF[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list Compteur/current_state ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/tb_PilotageLED_Avec_Module_LedDriver_behav.wcfg}
+source tb_PilotageLED_Avec_Module_LedDriver.tcl
+run 50000ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP04 - Pilotage/PilotageLED/PilotageLED.runs/impl_1/PilotageLED_Avec_Module_LedDriver.bit} [get_hw_devices xc7z010_1]
+program_hw_devices -disable_eos_check [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+close_sim
