@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Domaine_Horloge.gen/sources_1/ip/PLL_Clock" \
+"../../../../Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v" \
+"../../../../Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

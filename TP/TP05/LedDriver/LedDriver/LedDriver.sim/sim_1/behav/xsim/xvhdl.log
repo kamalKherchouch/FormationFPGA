@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/LedDriver/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/LedDriver/tb_LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_LedDriver'

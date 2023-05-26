@@ -1,0 +1,32 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.PLL_Clock_clk_wiz
+Compiling module xil_defaultlib.PLL_Clock
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav

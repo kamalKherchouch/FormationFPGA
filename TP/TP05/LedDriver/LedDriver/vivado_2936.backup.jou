@@ -1,0 +1,301 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 16 13:29:13 2023
+# Process ID: 2936
+# Current directory: C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6840 C:\Users\utilisateur\Documents\TP\TP04\LedDriver\LedDriver\LedDriver.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/LedDriver.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 20000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 50000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 30000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 20000ns
+run 20000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 40000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 60000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 60000ns
+add_bp {C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver.vhd} 94
+restart
+run 60000ns
+add_bp {C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver.vhd} 95
+remove_bps -file {C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver.vhd} -line 94
+run 60000ns
+remove_bps -file {C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver.vhd} -line 95
+restart
+run 60000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP04/LedDriver/LedDriver/tb_LedDriver_behav.wcfg
+source tb_LedDriver.tcl
+run 60000ns
+close_sim

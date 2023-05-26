@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 24 09:42:59 2023
+# Process ID: 9160
+# Current directory: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10976 C:\Users\utilisateur\Documents\TP\TP05\Domaine_Horloge\Domaine_Horloge.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+restart
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 50000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 200000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 200000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+run 1000000ns
+run 1000000ns
+run 1000000ns
+run 1000000ns
+run 1000000ns
+restart
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+restart
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT2_USED {true} CONFIG.PRIMARY_PORT {clk} CONFIG.CLK_OUT1_PORT {clkA} CONFIG.CLK_OUT2_PORT {clkB} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {10} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {110.209} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+generate_target all [get_files  c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 4
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset clk_wiz_0 c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name PLL_Clock
+set_property -dict [list CONFIG.Component_Name {PLL_Clock} CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT2_USED {true} CONFIG.PRIMARY_PORT {clk} CONFIG.CLK_OUT1_PORT {clkA} CONFIG.CLK_OUT2_PORT {clkB} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {10} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {110.209} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_ips PLL_Clock]
+generate_target {instantiation_template} [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+generate_target all [get_files  c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+catch { config_ip_cache -export [get_ips -all PLL_Clock] }
+export_ip_user_files -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+launch_runs PLL_Clock_synth_1 -jobs 4
+wait_on_run PLL_Clock_synth_1
+export_simulation -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 50000ns
+restart
+run 50000ns
+set_property -dict [list CONFIG.PRIMARY_PORT {clk_100MHz} CONFIG.CLK_OUT1_PORT {clk_250MHz} CONFIG.CLK_OUT2_PORT {clk_50MHZ}] [get_ips PLL_Clock]
+generate_target all [get_files  c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+catch { config_ip_cache -export [get_ips -all PLL_Clock] }
+export_ip_user_files -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -no_script -sync -force -quiet
+reset_run PLL_Clock_synth_1
+launch_runs PLL_Clock_synth_1 -jobs 4
+wait_on_run PLL_Clock_synth_1
+export_simulation -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+run 100000ns

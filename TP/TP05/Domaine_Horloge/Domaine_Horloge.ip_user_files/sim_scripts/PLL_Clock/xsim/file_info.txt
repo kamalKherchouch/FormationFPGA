@@ -1,0 +1,3 @@
+PLL_Clock_clk_wiz.v,verilog,xil_defaultlib,../../../../Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+PLL_Clock.v,verilog,xil_defaultlib,../../../../Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v

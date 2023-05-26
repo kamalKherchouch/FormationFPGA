@@ -1,0 +1,1696 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 24 09:42:59 2023
+# Process ID: 9160
+# Current directory: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10976 C:\Users\utilisateur\Documents\TP\TP05\Domaine_Horloge\Domaine_Horloge.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:15 . Memory (MB): peak = 1082.309 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/tb_Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1082.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+WARNING: Simulation object /tb_Domaine_Horloge/clk was not found in the design.
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1082.309 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1082.309 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 200000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 200000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+run 1000000ns
+run 1000000ns
+run 1000000ns
+run 1000000ns
+run 1000000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/tb_Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:101]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1082.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/tb_Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:104]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:113]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:105]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:105]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:22]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:105]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.309 ; gain = 0.000
+run 100000ns
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT2_USED {true} CONFIG.PRIMARY_PORT {clk} CONFIG.CLK_OUT1_PORT {clkA} CONFIG.CLK_OUT2_PORT {clkB} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {10} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {110.209} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 4
+[Wed May 24 13:59:38 2023] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset clk_wiz_0 c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/clk_wiz_0_synth_1
+
+INFO: [Project 1-386] Moving file 'c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name PLL_Clock
+set_property -dict [list CONFIG.Component_Name {PLL_Clock} CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT2_USED {true} CONFIG.PRIMARY_PORT {clk} CONFIG.CLK_OUT1_PORT {clkA} CONFIG.CLK_OUT2_PORT {clkB} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {10} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {110.209} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_ips PLL_Clock]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'PLL_Clock' to 'PLL_Clock' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PLL_Clock'...
+generate_target all [get_files  c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PLL_Clock'...
+catch { config_ip_cache -export [get_ips -all PLL_Clock] }
+export_ip_user_files -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+launch_runs PLL_Clock_synth_1 -jobs 4
+[Wed May 24 14:04:21 2023] Launched PLL_Clock_synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/PLL_Clock_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1283.539 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-718] formal port <clka> does not exist in entity <Domaine_Horloge>.  Please compare the definition of block <Domaine_Horloge> to its component declaration and its instantion to detect the mismatch. [C:/Users/utilisateur/Documents/TP/TP05/tb_Domaine_Horloge.vhd:33]
+ERROR: [VRFC 10-718] formal port <clkb> does not exist in entity <Domaine_Horloge>.  Please compare the definition of block <Domaine_Horloge> to its component declaration and its instantion to detect the mismatch. [C:/Users/utilisateur/Documents/TP/TP05/tb_Domaine_Horloge.vhd:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1283.539 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/tb_Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1283.539 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:25]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:127]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=10,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.PLL_Clock_clk_wiz
+Compiling module xil_defaultlib.PLL_Clock
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1283.539 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+WARNING: Simulation object /tb_Domaine_Horloge/clka was not found in the design.
+WARNING: Simulation object /tb_Domaine_Horloge/clkb was not found in the design.
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1284.926 ; gain = 1.387
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1349.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:25]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:127]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1352.066 ; gain = 2.309
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1357.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:25]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:127]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1357.469 ; gain = 0.297
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1357.469 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:25]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:127]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1360.645 ; gain = 3.176
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1368.125 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:25]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:127]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1368.125 ; gain = 0.000
+run 50000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50000ns
+set_property -dict [list CONFIG.PRIMARY_PORT {clk_100MHz} CONFIG.CLK_OUT1_PORT {clk_250MHz} CONFIG.CLK_OUT2_PORT {clk_50MHZ}] [get_ips PLL_Clock]
+generate_target all [get_files  c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PLL_Clock'...
+catch { config_ip_cache -export [get_ips -all PLL_Clock] }
+export_ip_user_files -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -no_script -sync -force -quiet
+reset_run PLL_Clock_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/PLL_Clock_synth_1
+
+launch_runs PLL_Clock_synth_1 -jobs 4
+[Wed May 24 14:33:04 2023] Launched PLL_Clock_synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/PLL_Clock_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1369.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:25]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:127]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1369.684 ; gain = 0.000
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1392.738 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:25]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:127]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1396.969 ; gain = 4.230
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1396.969 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:25]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:19]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:127]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1402.762 ; gain = 5.793
+run 100000ns

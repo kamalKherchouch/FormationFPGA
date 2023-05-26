@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 26 10:50:11 2023
+# Process ID: 5492
+# Current directory: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+# Command line: vivado.exe -log Domaine_Horloge.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Domaine_Horloge.tcl
+# Log file: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/Domaine_Horloge.vds
+# Journal file: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Domaine_Horloge.tcl -notrace

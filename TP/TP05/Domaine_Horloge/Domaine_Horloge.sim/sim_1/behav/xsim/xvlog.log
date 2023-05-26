@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock

@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Module/Counter_unit.vhd" \
+"../../../../../Domaine_Horloge.vhd" \
+"../../../../../Module/LedDriver.vhd" \
+"../../../../../tb_Domaine_Horloge.vhd" \
+
+# Do not sort compile order
+nosort

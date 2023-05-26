@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_Domaine_Horloge_behav/xsimk.exe -simmode gui -wdb tb_Domaine_Horloge_behav.wdb -simrunnum 0 -socket 51186
+Design successfully loaded
+Design Loading Memory Usage: 5436 KB (Peak: 5436 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 9836 KB (Peak: 9836 KB)
+Simulation CPU Usage: 890 ms

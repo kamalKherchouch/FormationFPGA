@@ -1,0 +1,825 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 25 16:28:30 2023
+# Process ID: 10388
+# Current directory: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3516 C:\Users\utilisateur\Documents\TP\TP05\Domaine_Horloge\Domaine_Horloge.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/hicha/OneDrive/Bureau/TP05/Domaine_Horloge' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:15 . Memory (MB): peak = 1100.660 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.000} CONFIG.CLKOUT1_JITTER {110.209}] [get_ips PLL_Clock]
+generate_target all [get_files  C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PLL_Clock'...
+catch { config_ip_cache -export [get_ips -all PLL_Clock] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PLL_Clock, cache-ID = 22d0bf043a73078c; cache size = 0.248 MB.
+catch { [ delete_ip_run [get_ips -all PLL_Clock] ] }
+INFO: [Project 1-386] Moving file 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' from fileset 'PLL_Clock' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci'
+export_simulation -of_objects [get_files C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Module/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/tb_Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1100.660 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.PLL_Clock_clk_wiz
+Compiling module xil_defaultlib.PLL_Clock
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1100.660 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1133.145 ; gain = 32.484
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.145 ; gain = 32.484
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.PLL_Clock_clk_wiz
+Compiling module xil_defaultlib.PLL_Clock
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1133.145 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1136.410 ; gain = 3.266
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1136.410 ; gain = 3.266
+run 100000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100000ns
+save_wave_config {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Module/LedDriver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:145]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1150.367 ; gain = 9.582
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1150.367 ; gain = 9.582
+run 100000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 16:39:43 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 16:41:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1337.547 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2004.895 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2004.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2004.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2112.086 ; gain = 934.906
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 16:44:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 16:46:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2228.219 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2228.219 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 2228.219 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 2298.262 ; gain = 81.359
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.CLKOUT1_JITTER {114.829}] [get_ips PLL_Clock]
+generate_target all [get_files  C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PLL_Clock'...
+catch { config_ip_cache -export [get_ips -all PLL_Clock] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PLL_Clock, cache-ID = 39a94524fe413d4b; cache size = 0.248 MB.
+export_ip_user_files -of_objects [get_files C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci'
+export_simulation -of_objects [get_files C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Domaine_Horloge'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2298.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.PLL_Clock_clk_wiz
+Compiling module xil_defaultlib.PLL_Clock
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2298.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2319.879 ; gain = 21.617
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 2319.879 ; gain = 21.617
+run 100000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Domaine_Horloge' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Domaine_Horloge_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_Clock
+"xvhdl --incr --relax -prj tb_Domaine_Horloge_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2321.184 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+"xelab -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7d41112781634305ae405eefe0d1b2d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Domaine_Horloge_behav xil_defaultlib.tb_Domaine_Horloge xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:27]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Module/Counter_unit.vhd:31]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:136]
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge.vhd:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter_unit [counter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedDriver [leddriver_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.PLL_Clock_clk_wiz
+Compiling module xil_defaultlib.PLL_Clock
+Compiling architecture behavioral of entity xil_defaultlib.Domaine_Horloge [domaine_horloge_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_domaine_horloge
+Built simulation snapshot tb_Domaine_Horloge_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2321.184 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Domaine_Horloge_behav -key {Behavioral:sim_1:Functional:tb_Domaine_Horloge} -tclbatch {tb_Domaine_Horloge.tcl} -view {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/tb_Domaine_Horloge_behav.wcfg
+source tb_Domaine_Horloge.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2329.621 ; gain = 8.438
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Domaine_Horloge_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 2329.621 ; gain = 8.438
+run 100000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 16:55:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 16:57:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2342.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2342.102 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2342.102 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2342.102 ; gain = 12.480
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 16:59:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2342.102 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3842.793 ; gain = 1500.691
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:03:40 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:05:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:08:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:08:57 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:10:29 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:12:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:15:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:17:06 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:18:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:21:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:25:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:26:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:28:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.dcp' for cell 'PLL'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3900.797 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_board.xdc] for cell 'PLL/inst'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_board.xdc] for cell 'PLL/inst'
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.xdc] for cell 'PLL/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.xdc:57]
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.xdc] for cell 'PLL/inst'
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP05/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/TP05/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4101.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.000} CONFIG.CLKOUT1_JITTER {110.209}] [get_ips PLL_Clock]
+generate_target all [get_files  C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'PLL_Clock'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PLL_Clock'...
+catch { config_ip_cache -export [get_ips -all PLL_Clock] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PLL_Clock, cache-ID = 22d0bf043a73078c; cache size = 0.248 MB.
+export_ip_user_files -of_objects [get_files C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci'
+export_simulation -of_objects [get_files C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci] -directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files -ipstatic_source_dir C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/modelsim} {questa=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/questa} {riviera=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/riviera} {activehdl=C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:30:37 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu May 25 17:31:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4101.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 4101.836 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 4101.836 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 4101.836 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.srcs/sources_1/ip/PLL_Clock/PLL_Clock.xci' is already up-to-date
+[Thu May 25 17:34:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/TP05/Domaine_Horloge/Domaine_Horloge.runs/impl_1/Domaine_Horloge.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 25 17:37:46 2023...
