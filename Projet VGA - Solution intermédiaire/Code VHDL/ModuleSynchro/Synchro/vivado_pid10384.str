@@ -1,0 +1,146 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 10384
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Jun 08 14:47:39 CEST 2023
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1600x900
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	utilisateur
+User home directory: C:/Users/utilisateur
+User working directory: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro
+User country: 	FR
+User language: 	fr
+User locale: 	fr_FR
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2020.2
+RDI_DATADIR: D:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/utilisateur/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/utilisateur/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/utilisateur/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/vivado.log
+Vivado journal file location: 	C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/vivado.jou
+Engine tmp dir: 	C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/.Xil/Vivado-10384-DESKTOP-AD02GFS
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2020.2
+XILINX_SDK: D:/Xilinx/Vitis/2020.2
+XILINX_VITIS: D:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,104 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1590 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\utilisateur\Documents\TP\Projet VGA\Code VHDL\ModuleSynchro\Synchro\Synchro.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/Synchro.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 52 MB. Current time: 6/8/23, 2:47:40 PM CEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/Synchro.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+102405kb) [00:00:35]
+// [Engine Memory]: 1,104 MB (+1006328kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  6321 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1102.313 ; gain = 0.000 
+// Project name: Synchro; location: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 458ms to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 108 MB (+2679kb) [00:00:48]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 118 MB (+5320kb) [00:00:50]
+// Elapsed time: 154 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'c' command handler elapsed time: 3 seconds
+// [GUI Memory]: 130 MB (+6650kb) [00:03:20]
+dismissDialog("Launch Runs"); // f
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchro(behavioral) (Synchro.vhd)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchro(behavioral) (Synchro.vhd)]", 1, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a
+setFileChooser("C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 10 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // c
+// Tcl Message: add_files -fileset constrs_1 -norecurse {{C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc}} 
+// bz (cr):  Add Constraint  : addNotify
+dismissDialog("Add Constraint"); // bz

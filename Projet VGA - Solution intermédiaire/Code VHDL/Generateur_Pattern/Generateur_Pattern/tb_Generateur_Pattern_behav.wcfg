@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Generateur_Pattern_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="librairie_perso" />
+            <top_module name="tb_Generateur_Pattern" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="16753803299fs"></ZoomStartTime>
+      <ZoomEndTime time="16861603300fs"></ZoomEndTime>
+      <Cursor1Time time="16833003299fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="142"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/Locked_PLL_resetAuto" type="logic">
+      <obj_property name="ElementShortName">Locked_PLL_resetAuto</obj_property>
+      <obj_property name="ObjectShortName">Locked_PLL_resetAuto</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/clk_Vga" type="logic">
+      <obj_property name="ElementShortName">clk_Vga</obj_property>
+      <obj_property name="ObjectShortName">clk_Vga</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/H_SYNCH" type="logic">
+      <obj_property name="ElementShortName">H_SYNCH</obj_property>
+      <obj_property name="ObjectShortName">H_SYNCH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/V_SYNCH" type="logic">
+      <obj_property name="ElementShortName">V_SYNCH</obj_property>
+      <obj_property name="ObjectShortName">V_SYNCH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/Position_H" type="other">
+      <obj_property name="ElementShortName">Position_H</obj_property>
+      <obj_property name="ObjectShortName">Position_H</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/Position_V" type="other">
+      <obj_property name="ElementShortName">Position_V</obj_property>
+      <obj_property name="ObjectShortName">Position_V</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/Rouge_Intensite" type="array">
+      <obj_property name="ElementShortName">Rouge_Intensite[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Rouge_Intensite[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/Vert_Intensite" type="array">
+      <obj_property name="ElementShortName">Vert_Intensite[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Vert_Intensite[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Generateur_Pattern/dut/Bleu_Intensite" type="array">
+      <obj_property name="ElementShortName">Bleu_Intensite[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Bleu_Intensite[3:0]</obj_property>
+   </wvobject>
+</wave_config>

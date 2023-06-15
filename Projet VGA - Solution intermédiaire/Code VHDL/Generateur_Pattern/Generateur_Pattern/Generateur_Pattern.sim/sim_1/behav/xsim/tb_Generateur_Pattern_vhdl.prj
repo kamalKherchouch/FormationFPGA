@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Generateur_Pattern.vhd" \
+"../../../../../Librairie_Perso.vhd" \
+"../../../../../Pattern_VGA.vhd" \
+"../../../../../Synchro.vhd" \
+"../../../../../tb_Generateur_Pattern.vhd" \
+
+# Do not sort compile order
+nosort

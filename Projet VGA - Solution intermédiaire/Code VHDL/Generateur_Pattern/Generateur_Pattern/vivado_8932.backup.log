@@ -1,0 +1,505 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 13 13:49:29 2023
+# Process ID: 8932
+# Current directory: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2448 C:\Users\utilisateur\Documents\TP\Projet VGA\Code VHDL\Generateur_Pattern\Generateur_Pattern\Generateur_Pattern.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1100.336 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1100.336 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210370AD529AA
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2455.098 ; gain = 1354.762
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/Generateur_Pattern.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/Generateur_Pattern.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: Generateur_Pattern
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3059.164 ; gain = 261.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Generateur_Pattern' [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern.vhd:18]
+INFO: [Synth 8-3491] module 'clock_VGA' declared at 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/.Xil/Vivado-8932-DESKTOP-AD02GFS/realtime/clock_VGA_stub.v:5' bound to instance 'clock_VGA0' of component 'clock_VGA' [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'clock_VGA' [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/.Xil/Vivado-8932-DESKTOP-AD02GFS/realtime/clock_VGA_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock_VGA' (1#1) [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/.Xil/Vivado-8932-DESKTOP-AD02GFS/realtime/clock_VGA_stub.v:5]
+INFO: [Synth 8-3491] module 'Synchro' declared at 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Synchro.vhd:6' bound to instance 'Synchro0' of component 'Synchro' [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'Synchro' [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Synchro.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Synchro' (2#1) [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Synchro.vhd:17]
+WARNING: [Synth 8-7043] port width mismatch for port 'Position_Horizontal': port width = 32, actual width = 10 (integer) [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern.vhd:84]
+WARNING: [Synth 8-7043] port width mismatch for port 'Position_Vertical': port width = 32, actual width = 10 (integer) [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern.vhd:85]
+INFO: [Synth 8-3491] module 'Pattern_VGA' declared at 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Pattern_VGA.vhd:6' bound to instance 'Pattern_Damier' of component 'Pattern_VGA' [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Pattern_VGA' [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Pattern_VGA.vhd:18]
+WARNING: [Synth 8-614] signal 'Intensite_faible' is read in the process but is not in the sensitivity list [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Pattern_VGA.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Pattern_VGA' (3#1) [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Pattern_VGA.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Generateur_Pattern' (4#1) [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3105.523 ; gain = 307.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3123.313 ; gain = 325.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3123.313 ; gain = 325.488
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.dcp' for cell 'clock_VGA0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3144.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA_board.xdc] for cell 'clock_VGA0/inst'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA_board.xdc] for cell 'clock_VGA0/inst'
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc] for cell 'clock_VGA0/inst'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc] for cell 'clock_VGA0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Generateur_Pattern_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Generateur_Pattern_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3240.313 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 3344.598 ; gain = 546.773
+20 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 3344.598 ; gain = 858.371
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Jun 13 13:58:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Jun 13 13:59:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jun 13 14:02:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/Generateur_Pattern.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Jun 13 14:04:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Jun 13 14:05:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jun 13 14:07:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3399.656 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3994.809 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3994.809 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3994.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 4061.188 ; gain = 667.391
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jun 13 14:09:08 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Tue Jun 13 14:09:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jun 13 14:13:02 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/Generateur_Pattern.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Tue Jun 13 14:16:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4147.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 4147.734 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 4147.734 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 4147.734 ; gain = 25.633
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+[Tue Jun 13 14:20:00 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1/runme.log
+[Tue Jun 13 14:20:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4206.395 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 4206.395 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 4206.395 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 4206.395 ; gain = 18.559
+current_design rtl_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.dcp' for cell 'clock_VGA0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4285.242 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA_board.xdc] for cell 'clock_VGA0/inst'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA_board.xdc] for cell 'clock_VGA0/inst'
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc] for cell 'clock_VGA0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc:57]
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc] for cell 'clock_VGA0/inst'
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4431.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Jun 13 14:24:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.dcp' for cell 'clock_VGA0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4431.727 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA_board.xdc] for cell 'clock_VGA0/inst'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA_board.xdc] for cell 'clock_VGA0/inst'
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc] for cell 'clock_VGA0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc:57]
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.xdc] for cell 'clock_VGA0/inst'
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4498.695 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 4498.695 ; gain = 0.000
+[Tue Jun 13 14:26:49 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+current_design impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jun 13 14:28:22 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/Generateur_Pattern.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Jun 13 14:30:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Jun 13 14:31:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jun 13 14:36:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/impl_1/Generateur_Pattern.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Generateur_Pattern' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Generateur_Pattern_vlog.prj"
+"xvhdl --incr --relax -prj tb_Generateur_Pattern_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Pattern_VGA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Pattern_VGA'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+"xelab -wto ed1815829889451997ea124a68cac8b0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Generateur_Pattern_behav xil_defaultlib.tb_Generateur_Pattern xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ed1815829889451997ea124a68cac8b0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Generateur_Pattern_behav xil_defaultlib.tb_Generateur_Pattern xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.librairie_perso
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=61.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clock_VGA_clk_wiz
+Compiling module xil_defaultlib.clock_VGA
+Compiling architecture behavioral of entity xil_defaultlib.Synchro [synchro_default]
+Compiling architecture behavioral of entity xil_defaultlib.Pattern_VGA [pattern_vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generateur_Pattern [generateur_pattern_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_generateur_pattern
+Built simulation snapshot tb_Generateur_Pattern_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/utilisateur/Documents/TP/Projet -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/utilisateur/Documents/TP/Projet" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Jun 13 14:43:21 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4498.695 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Generateur_Pattern_behav -key {Behavioral:sim_1:Functional:tb_Generateur_Pattern} -tclbatch {tb_Generateur_Pattern.tcl} -view {{C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/tb_Generateur_Pattern_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/tb_Generateur_Pattern_behav.wcfg}
+source tb_Generateur_Pattern.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Generateur_Pattern_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 4498.695 ; gain = 0.000
+run 40ms
+run: Time (s): cpu = 00:01:55 ; elapsed = 00:05:50 . Memory (MB): peak = 4498.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Generateur_Pattern' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Generateur_Pattern_vlog.prj"
+"xvhdl --incr --relax -prj tb_Generateur_Pattern_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/tb_Generateur_Pattern.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Generateur_Pattern'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+"xelab -wto ed1815829889451997ea124a68cac8b0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Generateur_Pattern_behav xil_defaultlib.tb_Generateur_Pattern xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ed1815829889451997ea124a68cac8b0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Generateur_Pattern_behav xil_defaultlib.tb_Generateur_Pattern xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.librairie_perso
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=61.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clock_VGA_clk_wiz
+Compiling module xil_defaultlib.clock_VGA
+Compiling architecture behavioral of entity xil_defaultlib.Synchro [synchro_default]
+Compiling architecture behavioral of entity xil_defaultlib.Pattern_VGA [pattern_vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generateur_Pattern [generateur_pattern_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_generateur_pattern
+Built simulation snapshot tb_Generateur_Pattern_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Generateur_Pattern_behav -key {Behavioral:sim_1:Functional:tb_Generateur_Pattern} -tclbatch {tb_Generateur_Pattern.tcl} -view {{C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/tb_Generateur_Pattern_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/tb_Generateur_Pattern_behav.wcfg}
+source tb_Generateur_Pattern.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Generateur_Pattern_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 4498.695 ; gain = 0.000
+run 40ms
+run: Time (s): cpu = 00:01:46 ; elapsed = 00:05:36 . Memory (MB): peak = 4498.695 ; gain = 0.000
+save_wave_config {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/tb_Generateur_Pattern_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit

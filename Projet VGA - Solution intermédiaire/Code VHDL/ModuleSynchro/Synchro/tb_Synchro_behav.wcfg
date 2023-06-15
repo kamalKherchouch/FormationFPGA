@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Synchro_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_Synchro" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="33215866400fs"></ZoomStartTime>
+      <ZoomEndTime time="33698366401fs"></ZoomEndTime>
+      <Cursor1Time time="29540366400fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="96"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wave_markers>
+      <marker time="9054213720" label="" />
+      <marker time="9082216320" label="" />
+      <marker time="9050440320" label="" />
+      <marker time="15633792000" label="" />
+      <marker time="32252640000" label="" />
+      <marker time="15570240000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_Synchro/dut/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Synchro/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Synchro/H_SYNCH" type="logic">
+      <obj_property name="ElementShortName">H_SYNCH</obj_property>
+      <obj_property name="ObjectShortName">H_SYNCH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Synchro/Position_Horizontal" type="other">
+      <obj_property name="ElementShortName">Position_Horizontal</obj_property>
+      <obj_property name="ObjectShortName">Position_Horizontal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Synchro/V_SYNCH" type="logic">
+      <obj_property name="ElementShortName">V_SYNCH</obj_property>
+      <obj_property name="ObjectShortName">V_SYNCH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Synchro/Position_Vertical" type="other">
+      <obj_property name="ElementShortName">Position_Vertical</obj_property>
+      <obj_property name="ObjectShortName">Position_Vertical</obj_property>
+   </wvobject>
+</wave_config>

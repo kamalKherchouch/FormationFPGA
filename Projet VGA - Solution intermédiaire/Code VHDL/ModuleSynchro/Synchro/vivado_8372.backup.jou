@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun  7 13:32:52 2023
+# Process ID: 8372
+# Current directory: C:/Users/utilisateur/Documents/TP/Projet VGA/Module/ModuleSynchro/Synchro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9076 C:\Users\utilisateur\Documents\TP\Projet VGA\Module\ModuleSynchro\Synchro\Synchro.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/Projet VGA/Module/ModuleSynchro/Synchro/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/Projet VGA/Module/ModuleSynchro/Synchro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/Projet VGA/Module/ModuleSynchro/Synchro/Synchro.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/Projet VGA/Module/ModuleSynchro/Synchro/tb_Synchro_behav.wcfg}
+source tb_Synchro.tcl
+run 100us
+run 100ms
+close_sim
+launch_simulation
+open_wave_config {C:/Users/utilisateur/Documents/TP/Projet VGA/Module/ModuleSynchro/Synchro/tb_Synchro_behav.wcfg}
+source tb_Synchro.tcl
+run 40ms
+save_wave_config {C:/Users/utilisateur/Documents/TP/Projet VGA/Module/ModuleSynchro/Synchro/tb_Synchro_behav.wcfg}
+close_sim

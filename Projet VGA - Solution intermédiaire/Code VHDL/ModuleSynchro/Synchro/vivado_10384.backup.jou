@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  8 14:47:02 2023
+# Process ID: 10384
+# Current directory: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8420 C:\Users\utilisateur\Documents\TP\Projet VGA\Code VHDL\ModuleSynchro\Synchro\Synchro.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/Synchro.xpr}
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {{C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc}}

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  8 14:47:02 2023
+# Process ID: 10384
+# Current directory: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8420 C:\Users\utilisateur\Documents\TP\Projet VGA\Code VHDL\ModuleSynchro\Synchro\Synchro.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/Synchro.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/ModuleSynchro/Synchro/Synchro.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1102.313 ; gain = 0.000
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {{C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Cora-Z7-10-Master.xdc}}
