@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 30 14:15:57 2023
+# Process ID: 14028
+# Current directory: C:/Users/utilisateur/Documents/TP/Projet_VGA/Generateur_Pattern
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent268 C:\Users\utilisateur\Documents\TP\Projet_VGA\Generateur_Pattern\Generateur_Pattern.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/Projet_VGA/Generateur_Pattern/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/Projet_VGA/Generateur_Pattern\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/Projet_VGA/Generateur_Pattern/Generateur_Pattern.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag

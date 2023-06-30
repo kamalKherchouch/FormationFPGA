@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 12 14:53:28 2023
+# Process ID: 2620
+# Current directory: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/clock_VGA_synth_1
+# Command line: vivado.exe -log clock_VGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_VGA.tcl
+# Log file: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/clock_VGA_synth_1/clock_VGA.vds
+# Journal file: C:/Users/utilisateur/Documents/TP/Projet VGA/Code VHDL/Generateur_Pattern/Generateur_Pattern/Generateur_Pattern.runs/clock_VGA_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clock_VGA.tcl -notrace

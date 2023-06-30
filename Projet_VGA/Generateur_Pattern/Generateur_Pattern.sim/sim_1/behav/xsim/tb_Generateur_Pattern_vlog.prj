@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Generateur_Pattern.gen/sources_1/ip/clock_VGA" \
+"../../../../Generateur_Pattern.gen/sources_1/ip/Fifo_Ligne2/sim/Fifo_Ligne2.v" \
+"../../../../Generateur_Pattern.gen/sources_1/ip/Fifo_Ligne1/sim/Fifo_Ligne1.v" \
+"../../../../Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA_clk_wiz.v" \
+"../../../../Generateur_Pattern.gen/sources_1/ip/clock_VGA/clock_VGA.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
