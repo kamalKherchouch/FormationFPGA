@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 17 14:12:15 2023
+# Process ID: 6560
+# Current directory: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10844 C:\Users\utilisateur\Documents\TP\VGA_FIltre_Sobel\VGA_Sobel\VGA_Sobel.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

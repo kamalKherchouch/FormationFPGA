@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul 13 16:41:50 2023
+# Process ID: 10004
+# Current directory: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent144 C:\Users\utilisateur\Documents\TP\VGA_FIltre_Sobel\VGA_Sobel\VGA_Sobel.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1103.172 ; gain = 0.000
+update_compile_order -fileset sources_1

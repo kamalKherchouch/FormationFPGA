@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul 12 15:12:39 2023
+# Process ID: 9604
+# Current directory: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4384 C:\Users\utilisateur\Documents\TP\VGA_FIltre_Sobel\VGA_Sobel\VGA_Sobel.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

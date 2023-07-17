@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Filtre_Sobel.vhd,1689179567,vhdl,,,,vga_filtre_sobel,,,,,,,,
+C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_1/sim/Fifo_ligne_1.v,1688721453,verilog,,C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/tb_read_write_image.v,,Fifo_ligne_1,,,,,,,,
+C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_2/sim/Fifo_ligne_2.v,1688721484,verilog,,C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_1/sim/Fifo_ligne_1.v,,Fifo_ligne_2,,,,,,,,
+C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/tb_read_write_image.v,1689178247,verilog,,,,tb_read_write_image,,,,,,,,

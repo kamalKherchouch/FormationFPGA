@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../VGA_Sobel.gen/sources_1/ip/Fifo_ligne_1/sim/Fifo_ligne_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

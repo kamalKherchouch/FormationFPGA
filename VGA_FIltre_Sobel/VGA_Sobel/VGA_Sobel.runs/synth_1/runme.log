@@ -1,0 +1,250 @@
+
+*** Running vivado
+    with args -log VGA_filtre_Sobel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_filtre_Sobel.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source VGA_filtre_Sobel.tcl -notrace
+Command: synth_design -top VGA_filtre_Sobel -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9208
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1100.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGA_filtre_Sobel' [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Filtre_Sobel.vhd:25]
+	Parameter PX_SIZE bound to: 8 - type: integer 
+	Parameter Seuil_Sobel bound to: 600 - type: integer 
+INFO: [Synth 8-3491] module 'Fifo_ligne_1' declared at 'C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/synth_1/.Xil/Vivado-10764-DESKTOP-AD02GFS/realtime/Fifo_ligne_1_stub.v:6' bound to instance 'Fifo_L1' of component 'Fifo_ligne_1' [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Filtre_Sobel.vhd:177]
+INFO: [Synth 8-6157] synthesizing module 'Fifo_ligne_1' [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/synth_1/.Xil/Vivado-10764-DESKTOP-AD02GFS/realtime/Fifo_ligne_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fifo_ligne_1' (1#1) [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/synth_1/.Xil/Vivado-10764-DESKTOP-AD02GFS/realtime/Fifo_ligne_1_stub.v:6]
+INFO: [Synth 8-3491] module 'Fifo_ligne_2' declared at 'C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/synth_1/.Xil/Vivado-10764-DESKTOP-AD02GFS/realtime/Fifo_ligne_2_stub.v:6' bound to instance 'Fifo_L2' of component 'Fifo_ligne_2' [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Filtre_Sobel.vhd:188]
+INFO: [Synth 8-6157] synthesizing module 'Fifo_ligne_2' [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/synth_1/.Xil/Vivado-10764-DESKTOP-AD02GFS/realtime/Fifo_ligne_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fifo_ligne_2' (2#1) [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/synth_1/.Xil/Vivado-10764-DESKTOP-AD02GFS/realtime/Fifo_ligne_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'VGA_filtre_Sobel' (3#1) [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Filtre_Sobel.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1100.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1100.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1100.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1100.711 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_1/Fifo_ligne_1/Fifo_ligne_1_in_context.xdc] for cell 'Fifo_L1'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_1/Fifo_ligne_1/Fifo_ligne_1_in_context.xdc] for cell 'Fifo_L1'
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_2/Fifo_ligne_2/Fifo_ligne_2_in_context.xdc] for cell 'Fifo_L2'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_2/Fifo_ligne_2/Fifo_ligne_2_in_context.xdc] for cell 'Fifo_L2'
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Rouge[0]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'Rouge[1]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'Rouge[2]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'Rouge[3]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'Bleu[0]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'Bleu[1]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'Bleu[2]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'Bleu[3]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'Vert[0]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'Vert[1]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'Vert[2]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'Vert[3]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'H_SYNCH_filtre'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'V_SYNCH_filtre'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:40]
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/VGA_filtre_Sobel_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_filtre_Sobel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_filtre_Sobel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1179.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1179.727 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'Fifo_L1' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'Fifo_L2' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1187.934 ; gain = 87.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1187.934 ; gain = 87.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for Fifo_L1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Fifo_L2. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1187.934 ; gain = 87.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1187.934 ; gain = 87.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 3     
+	                8 Bit    Registers := 10    
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1187.934 ; gain = 87.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1187.934 ; gain = 87.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1187.949 ; gain = 87.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1189.016 ; gain = 88.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1194.801 ; gain = 94.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1194.801 ; gain = 94.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1194.801 ; gain = 94.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1194.801 ; gain = 94.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1194.801 ; gain = 94.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1194.801 ; gain = 94.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Fifo_ligne_1  |         1|
+|2     |Fifo_ligne_2  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |Fifo_ligne |     2|
+|3     |BUFG       |     1|
+|4     |CARRY4     |    51|
+|5     |LUT1       |     6|
+|6     |LUT2       |   131|
+|7     |LUT3       |    35|
+|8     |LUT4       |    30|
+|9     |LUT5       |    13|
+|10    |LUT6       |    26|
+|11    |FDCE       |   136|
+|12    |FDRE       |    32|
+|13    |IBUF       |    11|
+|14    |OBUF       |     9|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1194.801 ; gain = 94.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.801 ; gain = 6.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1194.801 ; gain = 94.090
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1205.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1210.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1210.086 ; gain = 109.375
+INFO: [Common 17-1381] The checkpoint 'C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/synth_1/VGA_filtre_Sobel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGA_filtre_Sobel_utilization_synth.rpt -pb VGA_filtre_Sobel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 17 14:34:16 2023...

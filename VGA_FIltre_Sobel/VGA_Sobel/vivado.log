@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 17 14:31:17 2023
+# Process ID: 3420
+# Current directory: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6560 C:\Users\utilisateur\Documents\TP\VGA_FIltre_Sobel\VGA_Sobel\VGA_Sobel.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1101.387 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jul 17 14:33:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_1/Fifo_ligne_1.dcp' for cell 'Fifo_L1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_2/Fifo_ligne_2.dcp' for cell 'Fifo_L2'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1218.285 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_1/Fifo_ligne_1.xdc] for cell 'Fifo_L1/U0'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_1/Fifo_ligne_1.xdc] for cell 'Fifo_L1/U0'
+Parsing XDC File [c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_2/Fifo_ligne_2.xdc] for cell 'Fifo_L2/U0'
+Finished Parsing XDC File [c:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.gen/sources_1/ip/Fifo_ligne_2/Fifo_ligne_2.xdc] for cell 'Fifo_L2/U0'
+Parsing XDC File [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Rouge[0]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Rouge[1]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Rouge[2]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Rouge[3]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Bleu[0]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Bleu[1]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Bleu[2]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Bleu[3]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vert[0]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vert[1]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vert[2]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vert[3]'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H_SYNCH_filtre'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V_SYNCH_filtre'. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1316.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 1457.785 ; gain = 356.430
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1906.113 ; gain = 9.008
+[Mon Jul 17 14:37:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1926.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 2003.848 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 2003.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2003.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 17 15:40:56 2023...

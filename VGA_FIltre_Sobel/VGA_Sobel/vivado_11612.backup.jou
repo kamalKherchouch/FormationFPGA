@@ -1,0 +1,126 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul 12 17:40:37 2023
+# Process ID: 11612
+# Current directory: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9896 C:\Users\utilisateur\Documents\TP\VGA_FIltre_Sobel\VGA_Sobel\VGA_Sobel.xpr
+# Log file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/vivado.log
+# Journal file: C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/VGA_Sobel.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+add_bp {C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/tb_read_write_image.v} 177
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+remove_bps -file {C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/tb_read_write_image.v} -line 177
+add_bp {C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/tb_read_write_image.v} 177
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+run 4ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+add_bp {C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/tb_read_write_image.v} 202
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+add_bp {C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/tb_read_write_image.v} 176
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run 4ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run 5ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run 5ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run 5ms
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run 5ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run 5ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/utilisateur/Documents/TP/VGA_FIltre_Sobel/VGA_Sobel/tb_read_write_image_behav.wcfg
+source tb_read_write_image.tcl
+run 4ms
+run all
+close_sim
